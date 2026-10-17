@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local runtime files
+groundstation_errors.log
+*.log
+
+# Packaging output and Windows shortcuts (they hold machine-specific paths)
+*.zip
+*.lnk

@@ -1,0 +1,16 @@
+{
+  "_comment": "synthetic test fixture, not real mission data",
+  "numberOfParameters": 5,
+  "parameters": [
+    {"id": 1, "name": "Battery Voltage", "position": 20, "length": 2, "dataType": "UInt16",
+     "equation": "RAW * 0.01", "unit": "V", "display": {"decimals": 2}},
+    {"id": 2, "name": "Temperature", "position": 35, "length": 2, "dataType": "Int16",
+     "equation": "(RAW * 0.1) - 40", "unit": "°C", "display": {"decimals": 1}},
+    {"id": 3, "name": "Bus Current", "position": 0, "length": 2, "dataType": "UInt16",
+     "equation": "RAW * 0.001", "unit": "A", "limits": {"min": 0.0, "max": 0.8}},
+    {"id": 4, "name": "Solar Panel Power", "position": 4, "length": 4, "dataType": "Float32",
+     "equation": "RAW * 2", "unit": "W", "display": {"decimals": 2}},
+    {"id": 5, "name": "Wheel Speed", "position": 8, "length": 4, "dataType": "Int32",
+     "endianness": "little", "equation": "RAW / 10", "unit": "rpm", "display": {"decimals": 1}}
+  ]
+}
